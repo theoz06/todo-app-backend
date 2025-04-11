@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api")
 public class AuthController {
     
     @Autowired
