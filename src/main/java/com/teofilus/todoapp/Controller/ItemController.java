@@ -21,14 +21,15 @@ import java.util.Map;
 import com.teofilus.todoapp.Models.Item;
 
 @RestController
-@RequestMapping("/api/checklist")
+@RequestMapping("/api/checklist/{checklistId}/item")
 public class ItemController {
+
     @Autowired
     private ItemService itemService;
 
     @GetMapping
     public List<Item> getItems(@PathVariable Integer checklistId) {
-        return itemService.getItemsByChecklistId(checklistId);
+        return itemService.getItemsByChecklistId(checklistId.longValue());
     }
 
     @PostMapping
