@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 @Data
@@ -29,5 +31,6 @@ public class Item {
 
     @ManyToOne
     @JoinColumn(name = "checklist_id")
+    @JsonIgnore
     private Checklist checklist;
 }
