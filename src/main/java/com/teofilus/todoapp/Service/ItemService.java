@@ -53,8 +53,4 @@ public class ItemService {
         itemRepository.deleteById(id);
     }
 
-    public List<Item> getItemsByChecklistId(Long checklistId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getItemsByChecklistId'");
-    }
 }

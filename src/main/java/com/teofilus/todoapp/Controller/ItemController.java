@@ -29,7 +29,7 @@ public class ItemController {
 
     @GetMapping
     public List<Item> getItems(@PathVariable Integer checklistId) {
-        return itemService.getItemsByChecklistId(checklistId.longValue());
+        return itemService.getItemsByChecklistId(checklistId);
     }
 
     @PostMapping

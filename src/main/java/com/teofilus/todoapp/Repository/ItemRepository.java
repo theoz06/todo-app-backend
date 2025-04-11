@@ -10,8 +10,6 @@ import com.teofilus.todoapp.Models.Item;
 @Repository
 public interface ItemRepository extends JpaRepository<Item, Integer> {
 
-    List<Item> findByChecklistId(Long checklistId);
-
     List<Item> findByChecklistId(Integer checklistId);
     
 }
